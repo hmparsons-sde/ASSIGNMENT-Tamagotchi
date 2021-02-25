@@ -19,7 +19,7 @@ Canva: https://www.canva.com/design/DAEXGRm67kQ/share/
 
 # COLOR PALETTE
 
-
+![tamagotchi-palette](https://user-images.githubusercontent.com/67122062/109096732-b1f1ce00-76e3-11eb-9d80-9ea018fa5119.png)
 
 # CONTRIBUTORS
 
