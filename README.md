@@ -12,8 +12,8 @@ The purpose of this project is to demonstrate maturation of Vanilla JS, CSS, HTM
 
 # WIREFRAMES
 
-Figma: https://www.figma.com/file/TbvOBDS4Ed1uq4RVAdLsuF/Quadrant-1?node-id=0%3A1
-Canva: https://www.canva.com/design/DAEXGRm67kQ/share/
+- Figma: https://www.figma.com/file/TbvOBDS4Ed1uq4RVAdLsuF/Quadrant-1?node-id=0%3A1
+- Canva: https://www.canva.com/design/DAEXGRm67kQ/share/
 
 # SCREENSHOTS
 
