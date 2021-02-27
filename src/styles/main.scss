@@ -1,3 +1,53 @@
 @import "~bootstrap/scss/bootstrap";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
-@import "./global/index.scss";
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+@import "./eat.scss";
+@import "./fight.scss";
+@import "./play.scss";
+@import "./sleep.scss";
+
+::selection {
+  background-color: transparent;
+}
+
+.jumbotron {
+  height: 18%;
+  background-color: transparent;
+  background-size: cover;
+  background-image: url(../images/Core-Tama_logo_LR.png);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-size: 100%;
+  background-image: url(../images/background.png);
+}
+
+#quad-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 70em;
+}
+
+#row-one {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#row-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../images/iconfinder_Tamagotchi_toy_video_game_retro_3151555.png);
+}
+
+#row-three {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 40em;
+}

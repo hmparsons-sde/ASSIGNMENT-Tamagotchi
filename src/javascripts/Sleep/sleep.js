@@ -1,48 +1,41 @@
 import printToDOM from '../DOMEvents';
 
+let energy = 50;
+
+const updateEnergy = () => {
+  document.querySelector('#energy-score').innerHTML = `${energy}`;
+};
+
+const nap = (e) => {
+  e.preventDefault();
+  energy += 50;
+  if (energy > 100) {
+    energy = 100;
+  }
+  updateEnergy();
+};
+
+const slumber = (e) => {
+  e.preventDefault();
+  energy += 60;
+  if (energy > 100) {
+    energy = 100;
+  }
+  updateEnergy();
+};
+
 const buildSleepQuad = () => {
-  const score = 100;
   let domString = '';
-  domString += `<div class='card' style='width: 30rem;'>
-                <div class='card-body'>
-                <h1 class="card-title">Rest</h1>
-                <div class="button-container">
-                    <button class="submit" id="button-nap">Nap</button>
-                    <button class="submit" id="button-slumber">Slumber</button>
-                </div>
-                <div id="energy-score">Energy: ${score}</div>
-                </div>
-                </div>`;
-  printToDOM('sleep', domString);
+  domString += `
+      <div id='sleep-quad'><h2>SNOOZE</h2></div>
+      <div id='energy-score'><p>Energy: <b><span id='energy-score'>${energy}</span></p></div>
+      <div class='mt-3' id='sleep-btn-container'>
+        <button type='button' class='btn' id='nap-btn'>Power Nap</button>
+        <button type='button' class='btn' id='slumber-btn'>Delta Waves</button>
+      </div>`;
+  printToDOM('#sleep', domString);
+  document.querySelector('#nap-btn').addEventListener('click', nap);
+  document.querySelector('#slumber-btn').addEventListener('click', slumber);
 };
 
 export default buildSleepQuad;
-// const buildSleepQuad = () => {
-//   let score = 50;
-//   document.querySelector('#sleep').html(`
-//   <div class="card-container card-container-sleep">
-//       <h1 class="card-title">Nap</h1>
-//       <div class="button-container">
-//           <button class="action-button" id="button-nap">Nap</button>
-//           <button class="action-button" id="button-slumber">Slumber</button>
-//       </div>
-//       <div id="energy-score">Energy: ${score}</div>
-//   </div>
-// `);
-//   document.querySelector('#button-nap').addEventListener('click', () => {
-//     score += 50;
-//     if (score > 100) {
-//       score = 100;
-//     }
-//     document.querySelector('energy-score').html(`Energy: ${score}`);
-//   });
-//   document.querySelector('#button-slumber').addEventListener('click', () => {
-//     score += 60;
-//     if (score > 100) {
-//       score = 100;
-//     }
-//     document.querySelector('#energy-score').html(`Energy: ${score}`);
-//   });
-// };
-
-// export default buildSleepQuad;

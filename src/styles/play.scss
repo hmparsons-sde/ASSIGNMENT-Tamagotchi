@@ -1,0 +1,35 @@
+@import "~bootstrap/scss/bootstrap";
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+
+
+#play {
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  width: 20em;
+  height: 20em;
+  background-color: #f8c9e0;
+  border: 2px solid #0e0d15;
+  margin-top: 5em;
+  padding: 2em;
+}
+
+#super-btn, #kinda-btn {
+  font-size: 14px;
+  border: 2px solid #96808a;
+  padding: 10px 20px;
+  margin: 10px 20px 0px 20px;
+  text-decoration: none;
+  color: #0e0d15;
+  font-weight: 300;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#super-btn:hover {
+  background-color: #e11e85;
+  color: #f3e927;
+}
+
+#kinda-btn:hover {
+  background-color: #e11e85;
+  color: #f3e927;
+}

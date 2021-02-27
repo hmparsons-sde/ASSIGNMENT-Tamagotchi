@@ -1,52 +1,42 @@
 import printToDOM from '../DOMEvents';
 
+let fun = 50;
+
+const updateFunScore = () => {
+  document.querySelector('#fun-score').innerHTML = `${fun}`;
+};
+
+const superFun = (e) => {
+  e.preventDefault();
+  fun += 50;
+  if (fun > 100) {
+    fun = 100;
+  }
+  updateFunScore();
+};
+
+const kindaFun = (e) => {
+  e.preventDefault();
+  fun += 2;
+  if (fun > 100) {
+    fun = 100;
+  }
+  updateFunScore();
+};
+
 const buildPlayQuad = () => {
-  const score = 100;
   let domString = '';
-  domString += `<div class='card' style='width: 30rem;'>
-                <div class='card-body'>
-                <h1 class="card-title">Fun</h1>
-                <div class="button-container">
-                    <button class="submit" id="button-super-fun">Party</button>
-                    <button class="submit" id="button-kinda-fun">Chill</button>
-                </div>
-                <div id="fun-score">Fun: ${score}</div>
-                </div>
-                </div>`;
-  printToDOM('play', domString);
+  domString += `
+    <div id='play-quad'><h2>PLAY</h2></div>
+    <div id='fun-score'><p>Fun: <b><span id='fun-score'>${fun}</span></p></div>
+    <div class='mt-3' id='fun-btn-container'>
+      <button type='button' class='btn' id='super-btn'>Rave Girl</button>
+      <button type='button' class='btn' id='kinda-btn'>Crossword</button>
+    </div>`;
+
+  printToDOM('#play', domString);
+  document.querySelector('#super-btn').addEventListener('click', superFun);
+  document.querySelector('#kinda-btn').addEventListener('click', kindaFun);
 };
 
 export default buildPlayQuad;
-
-// import printToDOM from '../DOMEvents';
-
-// const buildPlayQuad = () => {
-//   let domString = '';
-//   let score = 50;
-//   domString += `<div class="card-container card-container-eat">
-//       <h1 class="card-title">Eat</h1>
-//       <div class="button-container">
-//           <button class="action-button" id="button-healthy">Healthy</button>
-//           <button class="action-button" id="button-unhealthy">Unhealthy</button>
-//       </div>
-//       <div id="eat-score">Fun: ${score}</div>
-//   </div>`;
-
-//   document.querySelector('#button-super-fun').addEventListener('click', () => {
-//     score += 50;
-//     if (score > 100) {
-//       score = 100;
-//     }
-//     document.querySelector('fun-score').html(`Fun: ${score}`);
-//   });
-//   document.querySelector('#button-kinda-fun').addEventListener('click', () => {
-//     score += 2;
-//     if (score > 100) {
-//       score = 100;
-//     }
-//     document.querySelector('#fun-score').html(`Fun: ${score}`);
-//   });
-//   printToDOM('#play', domString);
-// };
-
-// export default buildPlayQuad;
