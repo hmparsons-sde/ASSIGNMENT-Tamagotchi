@@ -8,7 +8,7 @@ const updateStrength = () => {
 
 const braveRetreat = (e) => {
   e.preventDefault();
-  strength += 1;
+  strength += Math.floor(Math.random(1) * Math.floor(5));
   if (strength > 100) {
     strength = 100;
   }
@@ -17,7 +17,7 @@ const braveRetreat = (e) => {
 
 const upperCut = (e) => {
   e.preventDefault();
-  strength -= 10;
+  strength -= Math.floor(Math.random(1) * Math.floor(10));
   if (strength <= 0) {
     strength = 100;
   }

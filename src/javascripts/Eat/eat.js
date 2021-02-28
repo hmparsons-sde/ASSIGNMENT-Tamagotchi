@@ -8,7 +8,7 @@ const updateFull = () => {
 
 const feedKale = (e) => {
   e.preventDefault();
-  full += 10;
+  full += Math.floor(Math.random(1) * Math.floor(10));
   if (full > 100) {
     full = 100;
   }
@@ -17,7 +17,7 @@ const feedKale = (e) => {
 
 const feedPizza = (e) => {
   e.preventDefault();
-  full -= 3;
+  full -= Math.floor(Math.random(1) * Math.floor(5));
   if (full <= 0) {
     full = 'death';
   }
