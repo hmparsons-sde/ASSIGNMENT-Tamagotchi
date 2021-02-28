@@ -8,7 +8,7 @@ const updateEnergy = () => {
 
 const nap = (e) => {
   e.preventDefault();
-  energy += 50;
+  energy += Math.floor(Math.random(1) * Math.floor(5));
   if (energy > 100) {
     energy = 100;
   }
@@ -17,7 +17,7 @@ const nap = (e) => {
 
 const slumber = (e) => {
   e.preventDefault();
-  energy += 60;
+  energy += Math.floor(Math.random(1) * Math.floor(10));
   if (energy > 100) {
     energy = 100;
   }

@@ -8,7 +8,7 @@ const updateFunScore = () => {
 
 const superFun = (e) => {
   e.preventDefault();
-  fun += 50;
+  fun += Math.floor(Math.random(1) * Math.floor(5));
   if (fun > 100) {
     fun = 100;
   }
@@ -17,7 +17,7 @@ const superFun = (e) => {
 
 const kindaFun = (e) => {
   e.preventDefault();
-  fun += 2;
+  fun += Math.floor(Math.random(1) * Math.floor(2));
   if (fun > 100) {
     fun = 100;
   }
