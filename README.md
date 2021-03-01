@@ -10,7 +10,7 @@ The purpose of this project is to demonstrate maturation of Vanilla JS, CSS, HTM
 4. A dynamic header reflects changes to the overall health score of the pet.
 5. The user can choose to personalize their pet by uploading an image (via url) to the site.
 6. The pet's score cannot exceed 100. If the pet's score reaches 0, the pet will die. 
-7. The user can personalize the site by changing the background colors by submitting an image url.
+7. The user can personalize the site by changing the site background by submitting an image url.
 
 # WIREFRAMES
 
