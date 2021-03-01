@@ -1,9 +1,10 @@
 import '../styles/main.scss';
 import landingPage from './landingPage';
-import buildEatQuad from './Eat/eat';
-import buildPlayQuad from './Play/play';
-import buildFightQuad from './Fight/fight';
-import buildSleepQuad from './Sleep/sleep';
+import { buildEatQuad } from './Eat/eat';
+import { buildPlayQuad } from './Play/play';
+import { buildFightQuad } from './Fight/fight';
+import { buildSleepQuad } from './Sleep/sleep';
+import { progressBar, updateBar } from './data/healthStats';
 
 const init = () => {
   landingPage();
@@ -11,6 +12,8 @@ const init = () => {
   buildPlayQuad();
   buildFightQuad();
   buildSleepQuad();
+  progressBar();
+  updateBar();
 };
 
 init();
