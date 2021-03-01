@@ -20,6 +20,11 @@ const feedKale = (e) => {
 const feedPizza = (e) => {
   e.preventDefault();
   full -= Math.floor(Math.random(1) * Math.floor(5));
+  if (full <= 0) {
+    full = 0;
+    document.querySelector('#eat-quad').innerHTML = '<h2 class=\'text-danger\'>GAME OVER</h2>';
+    document.querySelector('#eat-quad').style.backgroundColor = '#0e0d15';
+  }
   updateFull();
 };
 
