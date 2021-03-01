@@ -5,10 +5,11 @@ The purpose of this project is to demonstrate maturation of Vanilla JS, CSS, HTM
 # USER STORIES
 
 1. The user can play an interactive, dynamic game with a Tamagotchi-style virtual pet.
-2. The pet can eat, play, sleep, and fight. Each option has two buttons which impact both the target score and overall points average.
-3. Each score has a corresponding progress bar, which updates in real-time. 
-4. The user can choose to personalize their pet by uploading an image (via url) to the site.
-5. The pet's score cannot exceed 100. If the pet's score reaches 0, the pet will die. 
+2. The pet can eat, play, sleep, and fight. 
+3. Each option has two buttons which impact both the target score and overall points average.
+4. A dynamic progress bar reflects changes to the overall health score of the pet.
+5. The user can choose to personalize their pet by uploading an image (via url) to the site.
+6. The pet's score cannot exceed 100. If the pet's score reaches 0, the pet will die. 
 
 # WIREFRAMES
 
