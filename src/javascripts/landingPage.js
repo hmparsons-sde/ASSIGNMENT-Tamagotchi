@@ -4,6 +4,8 @@ const landingPage = () => {
   let domString = '';
   domString += `
   <div class='jumbotron jumbotron-fluid'></div>
+  <div id="progress"></div>
+  <div id="pet"></div>
   <div id='quad-container'>
     <div id='row-one'>
       <div id='eat' class='quad'></div>

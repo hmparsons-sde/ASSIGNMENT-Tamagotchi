@@ -2,6 +2,8 @@ import printToDOM from '../DOMEvents';
 
 let fun = 50;
 
+const funScore = () => fun;
+
 const updateFunScore = () => {
   document.querySelector('#fun-score').innerHTML = `${fun}`;
 };
@@ -28,7 +30,7 @@ const buildPlayQuad = () => {
   let domString = '';
   domString += `
     <div id='play-quad'><h2>PLAY</h2></div>
-    <div id='fun-score'><p>Fun: <b><span id='fun-score'>${fun}</span></p></div>
+    <div id='fun-score'><p><b><span id='fun-score'>${fun}</span></p></div>
     <div class='mt-3' id='fun-btn-container'>
       <button type='button' class='btn' id='super-btn'>Rave Girl</button>
       <button type='button' class='btn' id='kinda-btn'>Crossword</button>
@@ -39,4 +41,4 @@ const buildPlayQuad = () => {
   document.querySelector('#kinda-btn').addEventListener('click', kindaFun);
 };
 
-export default buildPlayQuad;
+export { buildPlayQuad, funScore };

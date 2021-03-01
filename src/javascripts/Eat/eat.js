@@ -2,6 +2,8 @@ import printToDOM from '../DOMEvents';
 
 let full = 100;
 
+const fullScore = () => full;
+
 const updateFull = () => {
   document.querySelector('#full-score').innerHTML = `${full}`;
 };
@@ -18,9 +20,6 @@ const feedKale = (e) => {
 const feedPizza = (e) => {
   e.preventDefault();
   full -= Math.floor(Math.random(1) * Math.floor(5));
-  if (full <= 0) {
-    full = 'death';
-  }
   updateFull();
 };
 
@@ -28,7 +27,7 @@ const buildEatQuad = () => {
   let domString = '';
   domString += `
   <div id='eat-quad'><h2>EAT</h2></div>
-  <div id='full-score'><p>Fullness: <b><span id='full-score'>${full}</span></p></div>
+  <div id='full-score'><p><b><span id='full-score'>${full}</span></p></div>
   <div class='mt-3' id='full-btn-container'>
     <button type='button' class='btn' id='kale-btn'>Kale Salad</button>
     <button type='button' class='btn' id='pizza-btn'>Pizza Party</button>
@@ -39,4 +38,4 @@ const buildEatQuad = () => {
   document.querySelector('#pizza-btn').addEventListener('click', feedPizza);
 };
 
-export default buildEatQuad;
+export { buildEatQuad, fullScore };

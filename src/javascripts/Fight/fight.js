@@ -2,6 +2,8 @@ import printToDOM from '../DOMEvents';
 
 let strength = 100;
 
+const strengthScore = () => strength;
+
 const updateStrength = () => {
   document.querySelector('#strength-score').innerHTML = `${strength}`;
 };
@@ -28,7 +30,7 @@ const buildFightQuad = () => {
   let domString = '';
   domString += `
     <div id='fight-quad'><h2>FIGHT</h2></div>
-    <div id='strength-score'><p>Strength: <b><span id='strength-score'>${strength}</span></p></div>
+    <div id='strength-score'><p><b><span id='strength-score'>${strength}</span></p></div>
     <div class='mt-3' id='fight-btn-container'>
       <button type='button' class='btn' id='retreat-btn'>Retreat (Bravely)</button>
       <button type='button' class='btn' id='fight-btn'>Uppercut (Hi-Ya!)</button>
@@ -39,4 +41,4 @@ const buildFightQuad = () => {
   document.querySelector('#fight-btn').addEventListener('click', upperCut);
 };
 
-export default buildFightQuad;
+export { buildFightQuad, strengthScore };
