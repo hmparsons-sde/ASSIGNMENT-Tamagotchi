@@ -1,5 +1,5 @@
 import '../styles/main.scss';
-import landingPage from './landingPage';
+import { landingPage, buttonEvent } from './landingPage';
 import { buildEatQuad } from './Eat/eat';
 import { buildPlayQuad } from './Play/play';
 import { buildFightQuad } from './Fight/fight';
@@ -14,6 +14,7 @@ const init = () => {
   buildSleepQuad();
   progressBar();
   updateBar();
+  buttonEvent();
 };
 
 init();
