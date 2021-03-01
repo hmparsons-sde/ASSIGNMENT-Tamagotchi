@@ -1,18 +1,24 @@
-@import "~bootstrap/scss/bootstrap";
-@import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import '~bootstrap/scss/bootstrap';
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
 
-@import "./eat.scss";
-@import "./fight.scss";
-@import "./play.scss";
-@import "./sleep.scss";
+@import './eat.scss';
+@import './fight.scss';
+@import './play.scss';
+@import './sleep.scss';
+@import '../styles/buttons.scss';
 
 ::selection {
   background-color: transparent;
 }
 
-.jumbotron {
-  height: 18%;
+#app {
+  width: auto;
+}
+
+.jumbotron-fluid {
+  height: 20%;
+  width: 100%;
   background-color: transparent;
   background-size: cover;
   background-image: url(../images/Core-Tama_logo_LR.png);
@@ -21,7 +27,6 @@
 body {
   display: flex;
   justify-content: center;
-  background-size: 100%;
   background-image: url(../images/background.png);
 }
 
@@ -49,5 +54,5 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  width: 40em;
+  width: 50em;
 }
