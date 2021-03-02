@@ -1,4 +1,4 @@
-import printToDOM from '../DOMEvents';
+import printToDOM from '../events/DOMEvents';
 
 let energy = 50;
 
