@@ -10,9 +10,6 @@ const landingPage = () => {
   <button type='button' class='btn' id='goth'>GOTH BAE</button>
   <button type='button' class='btn' id='surf'>SURF'S UP</button>
   </div>
-  <div class='container' id='url-form'></div>
-  </div>
-  <div id='progress'></div>
   <div id='quad-container'>
     <div id='row-one'>
       <div id='eat' class='quad'></div>
