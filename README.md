@@ -37,4 +37,4 @@ tama-holly.netlify.app
 
 # LOOM VIDEO
 
-![Loom Video](https://www.loom.com/share/0d9fe3d4700d4bf69a33e196778ed2b7)
+https://www.loom.com/share/0d9fe3d4700d4bf69a33e196778ed2b7
