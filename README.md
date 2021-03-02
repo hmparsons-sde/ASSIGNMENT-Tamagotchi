@@ -36,3 +36,5 @@ tama-holly.netlify.app
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ef54a2e2-e50e-4858-befe-7e368ae3f733/deploy-status)](https://app.netlify.com/sites/tama-holly/deploys)
 
 # LOOM VIDEO
+
+![Loom Video](https://www.loom.com/share/0d9fe3d4700d4bf69a33e196778ed2b7)
